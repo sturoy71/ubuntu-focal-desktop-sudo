@@ -1,4 +1,4 @@
-FROM  kasmweb/ubuntu-focal-desktop:1.12.0
+FROM  kasmweb/ubuntu-focal-desktop:1.12.0-rolling
 USER root
 
 ENV HOME /home/kasm-default-profile
@@ -9,9 +9,7 @@ WORKDIR $HOME
 ######### Customize Container Here ###########
 
 
-RUN apt-get update \
-    && apt-get install -y sudo \
-    && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y sudo && rm -rf /var/lib/apt/lists/*
 
 
 ######### End Customizations ###########
