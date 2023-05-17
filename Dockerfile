@@ -1,4 +1,4 @@
-FROM  kasmweb/ubuntu-focal-desktop:1.12.0-rolling
+FROM  kasmweb/ubuntu-focal-desktop:1.13.0-rolling
 USER root
 
 ENV HOME /home/kasm-default-profile
